@@ -4,6 +4,7 @@ I denna repository finns all kod till vårt lampprojekt. Vi har skapat en app so
 ## Frontend
 
 Component 1 - Allt det som användaren ser. Kommunicerar med backend för att skicka och hämta värden.
+
 Screen 1 - Visar Component 1
 
 Ladda ner hela frontend mappen för att kunna testa den. Öppna appen med en Code Editor. Skriv sedan "npm install" i terminalen för att ladda ner alla "node modules". Ladda också ner "expo" genom att skriva "npm install expo". Skriv sedan "npm start" och skanna QR-koden genom din "expo" app.
