@@ -72,7 +72,7 @@ export default class Component1 extends React.Component {
 
 			previousTime: this.state.hour
 
-		});
+		}); // skapar objektet som vi ska skicka
 		fetch('http://iot.abbindustrigymnasium.se:3001/grupp3/', {
                 method: 'PATCH',
                 headers: {
@@ -80,7 +80,7 @@ export default class Component1 extends React.Component {
                     'Content-Type': 'application/json',
                 },
 
-                body: bodypart
+                body: bodypart // skickar bodypart objektet
 
             }).then((response) => response.json()).then(responseJson => {
 
