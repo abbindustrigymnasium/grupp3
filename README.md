@@ -18,6 +18,7 @@ Ladda ner hela Backend mappen för att kunna testa den. Öppna den via en Code e
 ## Arduino
 
 ArduinoLampa - Hanterar lampan. Ökar eller sänker ljusstyrkan beroende på vad databasen innehåller. Ändrar av / på, varmt / kallt / båda.
+
 ArduinoLjussensor - Hanterar ljussensor. Läser av ljuset ute och skickar det till databasen varje sekund.
 
 Ladda ner båda filerna för att testa dem. Koppla sedan in din arduino och uploada koden.
