@@ -56,7 +56,7 @@ export default class Component1 extends React.Component {
 	}
 
 	getPreviousTime =() => {
-		fetch("http://iot.abbindustrigymnasium.se:3001/grupp3/lampa",{
+		fetch("http://iot.abbindustrigymnasium.se:30001/grupp3/lampa",{
 			method: "GET"
 		}).then((response) => response.json()).then((responseJSON) =>
 	   {  																	
@@ -73,7 +73,7 @@ export default class Component1 extends React.Component {
 			previousTime: this.state.hour
 
 		}); // skapar objektet som vi ska skicka
-		fetch('http://iot.abbindustrigymnasium.se:3001/grupp3/', {
+		fetch('http://iot.abbindustrigymnasium.se:3000/grupp3/', {
                 method: 'PATCH',
                 headers: {
                     'Accept': 'application/json',
@@ -96,7 +96,7 @@ export default class Component1 extends React.Component {
 	}
 
 	componentDidMount (){ // ska köras direkt när appen laddas 
-		fetch("http://iot.abbindustrigymnasium.se:3001/grupp3/lampa",{
+		fetch("http://iot.abbindustrigymnasium.se:3000/grupp3/lampa",{
 			method: "GET"
 		}).then((response) => response.json()).then((responseJSON) =>
 	   {   	console.log("this.state");
@@ -126,7 +126,7 @@ export default class Component1 extends React.Component {
 	}
 
 	getBrightnessOutside =() => { // hämtar ljuset ute från databasen
-		fetch("http://iot.abbindustrigymnasium.se:3001/grupp3/lampa",{
+		fetch("http://iot.abbindustrigymnasium.se:3000/grupp3/lampa",{
 			method: "GET"
 		}).then((response) => response.json()).then((responseJSON) =>
 	   {  
@@ -177,7 +177,7 @@ export default class Component1 extends React.Component {
             });
 
             console.log(bodypart);
-            fetch('http://iot.abbindustrigymnasium.se:3001/grupp3/', {
+            fetch('http://iot.abbindustrigymnasium.se:3000/grupp3/', {
 
                 method: 'PATCH',
 
